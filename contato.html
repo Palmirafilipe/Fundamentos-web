@@ -29,18 +29,18 @@
                     <input type="text" id="nome" onkeyup='validaNome()'>
                     <div id='txtNome'></div>
                     <br>
-                    <br>
-                    <label for="email">E-mail:</label> <br>
-                    <input type="email">
                     
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" id="email" onkeyup='validaEmail()'> 
+                    <div id='txtEmail'></div>
                     <br>
-                    <br>
-            
+
                     <label for="assunto">Assunto:</label>  <br>
-                    <textarea name="assuno" id="assunto" cols="60" rows="5"></textarea>
+                    <textarea name="assuno" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+                    <div id='txtAssunto'></div>
                     <br>
                     <br>
-                    <button>Enviar</button>
+                    <button onclick='enviar()'>Enviar</button>
                 </form>
             
             </div>
@@ -55,7 +55,8 @@
                 1!3m3!1m2!1s0x94ce42e7c9d0ce83%3A0x2130f03004779059!2sR.
                 %20Silveiras%2C%20135%20-%20Vila%20Guiomar%
                 2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009071-100!5e0!3m2!1spt-BR!2sbr!4v1618619312551!5m2!1spt-BR!2sbr" 
-                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="400" height="400" style="border:0;" 
+                allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
                 
             </div>
 
@@ -85,8 +86,6 @@
             
         </footer>
 
-        <script src="assets/js/sctipt.js"></script>
-   
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
